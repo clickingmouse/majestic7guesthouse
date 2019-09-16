@@ -7,7 +7,7 @@ export default function TSTParallax() {
       blur={0}
       bgImage={tstAriel}
       bgImageAlt="Ariel View of Tsim Sha Tsui Peninsula"
-      strength={450}
+      strength={1000}
     >
       <div style={{ height: "50vh" }} />
     </Parallax>
