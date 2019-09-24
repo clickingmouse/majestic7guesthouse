@@ -17,13 +17,13 @@ export default function Groceries() {
           <SupermarketCard
             logo={wellcome}
             title="Wellcome"
-            subtitle="53-54 Kimberley Rd"
+            subtitle="G/F, Luna Court, 55 Kimberley Road"
             summary="24 hours!"
           />
           <SupermarketCard
             logo={vanguard}
             title="Vanguard"
-            subtitle="4 Prat Ave"
+            subtitle="Shop 5-7, LG/F, Kundamal House, 4 Prat Ave"
             summary="closest 24 hours depot!"
           />{" "}
           <SupermarketCard

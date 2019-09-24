@@ -10,7 +10,7 @@ export default function SupermarketCard(props) {
         <Col>
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>
-            <Card.Subtitle>Address:{props.subtitle}</Card.Subtitle>
+            <Card.Subtitle>Address: {props.subtitle}</Card.Subtitle>
             <Card.Text>{props.summary}</Card.Text>
           </Card.Body>
         </Col>
