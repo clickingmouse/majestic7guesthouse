@@ -18,40 +18,40 @@ export default function RoomFeatures() {
   return (
     <Container>
       <div>RoomFeatures</div>
-      <Row>
+      <Row className="my-3">
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<FreeWifi fill="#1565c0" width="auto" height="auto " />}
+            icon={<FreeWifi fill="#1565c0" width="80%" height="auto " />}
             title="Free WiFi"
           ></FeatureCard>
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<AirCon width="auto" height="auto " />}
+            icon={<AirCon width="80%" height="auto " />}
             title="Air Con"
           />
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<Bathroom width="auto" height="auto " />}
+            icon={<Bathroom width="80%" height="auto " />}
             title="Bathroom"
           />
         </Col>{" "}
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<Television width="auto" height="auto " />}
+            icon={<Television width="80%" height="auto " />}
             title="Television"
           />
         </Col>{" "}
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<Towel width="auto" height="auto " />}
+            icon={<Towel width="80%" height="auto " />}
             title="Towel"
           />
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<Toiletries width="auto" height="auto " />}
+            icon={<Toiletries width="80%" height="auto " />}
             title="Toiletries"
           />
         </Col>
@@ -60,42 +60,42 @@ export default function RoomFeatures() {
       <Row>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<FreeMaps fill="#1565c0" width="auto" height="auto " />}
+            icon={<FreeMaps fill="#1565c0" width="80%" height="auto " />}
             title="Free Maps"
             color="#1565c0"
           ></FeatureCard>
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<HairDryer width="auto" height="auto " />}
+            icon={<HairDryer width="80%" height="auto " />}
             title="Hair Dryer"
             color="#1565c0"
           />
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<RackHanger width="auto" height="auto " />}
+            icon={<RackHanger width="80%" height="auto " />}
             title="Rack hanger"
             color="#1565c0"
           />
         </Col>{" "}
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<BottledWater width="auto" height="auto " />}
+            icon={<BottledWater width="80%" height="auto " />}
             title="Bottled Water"
             color="#1565c0"
           />
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<Refrigerator width="auto" height="auto " />}
+            icon={<Refrigerator width="80%" height="auto " />}
             title="Refrigerator"
             color="#1565c0"
           />
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<ElectricKettle width="auto" height="auto " />}
+            icon={<ElectricKettle width="80%" height="auto " />}
             title="Electric Kettle"
             color="#1565c0"
           />

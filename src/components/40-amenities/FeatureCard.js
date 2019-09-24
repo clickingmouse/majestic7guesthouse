@@ -10,10 +10,10 @@ import file from "../../media/amenities/freewifi.svg";
 export default function FeatureCard(props) {
   console.log(props.icon);
   return (
-    <Card style={{ width: "auto" }}>
-      {props.icon}
+    <Card style={{ width: "auto", textAlign: "center" }}>
+      <div className="pt-2">{props.icon}</div>
 
-      <Card.Body>
+      <Card.Body className="px-0 pb-0 pt-2">
         <Card.Title>{props.title}</Card.Title>
       </Card.Body>
     </Card>
