@@ -21,8 +21,13 @@ export default function Rooms() {
           height: "54px"
         }}
       />
-      <Container id="rooms">
-        <Tabs justify defaultActiveKey="solo" id="uncontrolled-tab-example">
+      <Container id="rooms" style={{ backgroundColor: "#FAFAFA" }}>
+        <Tabs
+          justify
+          defaultActiveKey="solo"
+          id="uncontrolled-tab-example"
+          className="mt-2"
+        >
           <Tab eventKey="solo" title="solo">
             <br />
             <Container>
@@ -92,6 +97,7 @@ export default function Rooms() {
             </Container>
           </Tab>
           <Tab eventKey="Family" title="Family">
+            <br />
             <Container>
               <Row>
                 <Col sm={4}>

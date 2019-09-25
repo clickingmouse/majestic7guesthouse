@@ -16,42 +16,42 @@ import { ReactComponent as ElectricKettle } from "../../media/amenities/kettle.s
 import { Container, Row, Col } from "react-bootstrap";
 export default function RoomFeatures() {
   return (
-    <Container>
+    <Container style={{ backgroundColor: "#FAFAFA" }}>
       <div>RoomFeatures</div>
       <Row className="my-3">
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<FreeWifi fill="#1565c0" width="80%" height="auto " />}
+            icon={<FreeWifi fill="#50c2ff" width="80%" height="auto " />}
             title="Free WiFi"
           ></FeatureCard>
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<AirCon width="80%" height="auto " />}
+            icon={<AirCon width="80%" height="auto " fill="#569a35" />}
             title="Air Con"
           />
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<Bathroom width="80%" height="auto " />}
+            icon={<Bathroom width="80%" height="auto " fill="#efbd78" />}
             title="Bathroom"
           />
         </Col>{" "}
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<Television width="80%" height="auto " />}
+            icon={<Television width="80%" height="auto " fill="#0371be" />}
             title="Television"
           />
         </Col>{" "}
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<Towel width="80%" height="auto " />}
+            icon={<Towel width="80%" height="auto " fill="#edf176" />}
             title="Towel"
           />
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<Toiletries width="80%" height="auto " />}
+            icon={<Toiletries width="80%" height="auto " fill="#d5450c" />}
             title="Toiletries"
           />
         </Col>
@@ -60,44 +60,44 @@ export default function RoomFeatures() {
       <Row>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<FreeMaps fill="#1565c0" width="80%" height="auto " />}
+            icon={<FreeMaps fill="#fb3739" width="80%" height="auto " />}
             title="Free Maps"
             color="#1565c0"
           ></FeatureCard>
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<HairDryer width="80%" height="auto " />}
+            icon={<HairDryer width="80%" height="auto " fill="#ecc0bc" />}
             title="Hair Dryer"
-            color="#1565c0"
+            color="#ecc0bc"
           />
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<RackHanger width="80%" height="auto " />}
+            icon={<RackHanger width="80%" height="auto " fill="#dd5a9c" />}
             title="Rack hanger"
             color="#1565c0"
           />
         </Col>{" "}
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<BottledWater width="80%" height="auto " />}
+            icon={<BottledWater width="80%" height="auto " fill="#7db8c4" />}
             title="Bottled Water"
             color="#1565c0"
           />
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<Refrigerator width="80%" height="auto " />}
+            icon={<Refrigerator width="80%" height="auto " fill="#e66256" />}
             title="Refrigerator"
             color="#1565c0"
           />
         </Col>
         <Col xs={4} sm={2}>
           <FeatureCard
-            icon={<ElectricKettle width="80%" height="auto " />}
+            icon={<ElectricKettle width="80%" height="auto " fill="#f4fb3b" />}
             title="Electric Kettle"
-            color="#1565c0"
+            color="#f4fb3b"
           />
         </Col>
       </Row>

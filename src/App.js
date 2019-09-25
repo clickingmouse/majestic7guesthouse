@@ -18,7 +18,7 @@ import Groceries from "../src/components/90-featured/Groceries";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: "#E1F5FE" }}>
       <Route path="/" component={NavBar} />
       <Route exact path="/" component={TSTParallax} />
       <Route exact path="/" component={AboutUs} />

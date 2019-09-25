@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 export default function AboutUs() {
   return (
-    <Container>
+    <Container style={{ backgroundColor: "#FAFAFA" }}>
       <h3> About Us</h3>
       Conveniently located in the heart of Tsim Sha Tsui, Majestic 7 Guesthouse
       (formerly KAT Hotel) offers accommodation in one of Hong Kong's most
