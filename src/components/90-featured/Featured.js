@@ -11,7 +11,7 @@ export default function Featured() {
   return (
     <div>
       <hr />
-      <Container>
+      <Container style={{ backgroundColor: "#FAFAFA" }}>
         <CardDeck>
           <FeaturedCard
             title="Handy Apps"

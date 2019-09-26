@@ -14,7 +14,7 @@ export default function Location() {
           height: "54px"
         }}
       />
-      <Container id="gettingHere">
+      <Container id="gettingHere" style={{ backgroundColor: "#FAFAFA" }}>
         <div>here we are</div>
         <Row>
           <Col>
