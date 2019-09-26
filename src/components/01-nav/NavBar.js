@@ -4,7 +4,9 @@ import { HashLink as Link } from "react-router-hash-link";
 export default function NavBar() {
   return (
     <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="#home">Majestic7Guesthouse</Navbar.Brand>
+      <Link to="/">
+        <Navbar.Brand href="/">Majestic7Guesthouse</Navbar.Brand>
+      </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
@@ -19,15 +21,11 @@ export default function NavBar() {
             </Link>
           </Nav.Link>
           <NavDropdown title="Around Us" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.1">Breakfast</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">Late Night</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">Supermarkets</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
-            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.4">Tidbits</NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <Nav>

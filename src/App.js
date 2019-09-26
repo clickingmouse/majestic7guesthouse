@@ -14,6 +14,7 @@ import Featured from "../src/components/90-featured/Featured";
 import HandyApps from "../src/components/90-featured/HandyApps";
 import Groceries from "../src/components/90-featured/Groceries";
 import Faq from "../src/components/91-faq/Faq";
+import Footer from "../src/components/02-footer/Footer";
 //import logo from './logo.svg';
 //import './App.css';
 
@@ -33,6 +34,7 @@ function App() {
       <Route exact path="/handy-apps" component={HandyApps} />
       <Route exact path="/supermarkets" component={Groceries} />
       <Route exact path="/faq" component={Faq} />
+      <Route path="/" component={Footer} />
     </div>
   );
 }
