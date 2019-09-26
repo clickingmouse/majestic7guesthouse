@@ -9,6 +9,13 @@ import twin from "../../media/rooms/twin.png";
 import quadruple from "../../media/rooms/quadruple.jpg";
 import quintet from "../../media/rooms/family.jpg";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faUserFriends,
+  faUsers
+} from "@fortawesome/free-solid-svg-icons";
+
 export default function Rooms() {
   return (
     <React.Fragment>
@@ -28,7 +35,14 @@ export default function Rooms() {
           id="uncontrolled-tab-example"
           className="mt-2"
         >
-          <Tab eventKey="solo" title="solo">
+          <Tab
+            eventKey="solo"
+            title={
+              <span>
+                <FontAwesomeIcon icon={faUser} size="3x" />
+              </span>
+            }
+          >
             <br />
             <Container>
               <Row>
@@ -62,7 +76,14 @@ export default function Rooms() {
               </Row>
             </Container>
           </Tab>
-          <Tab eventKey="duet" title="duet">
+          <Tab
+            eventKey="duet"
+            title={
+              <span>
+                <FontAwesomeIcon icon={faUserFriends} size="3x" />
+              </span>
+            }
+          >
             <br />
             <Container>
               <Row>
@@ -96,7 +117,14 @@ export default function Rooms() {
               </Row>
             </Container>
           </Tab>
-          <Tab eventKey="Family" title="Family">
+          <Tab
+            eventKey="Family"
+            title={
+              <span>
+                <FontAwesomeIcon icon={faUsers} size="3x" />
+              </span>
+            }
+          >
             <br />
             <Container>
               <Row>

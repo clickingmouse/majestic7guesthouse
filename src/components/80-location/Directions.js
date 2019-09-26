@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Directions() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
 
@@ -26,8 +26,9 @@ export default function Directions() {
         onClick={() => setOpen(!open)}
         aria-controls="example-collapse-text"
         aria-expanded={open}
+        className="d-flex"
       >
-        Via Air
+        <span className="mr-auto">From Hong Kong International Airport</span>
         <FontAwesomeIcon icon={iconClass} />
       </Button>
       <Collapse in={open}>
@@ -40,8 +41,10 @@ export default function Directions() {
         onClick={() => setOpen1(!open1)}
         aria-controls="example-collapse-text1"
         aria-expanded={open1}
+        className="d-flex"
       >
-        Via land
+        <span className="mr-auto"> From China Macau (Land Route)</span>
+        <FontAwesomeIcon icon={iconClass1} />
       </Button>{" "}
       <Collapse in={open1}>
         <div id="example-collapse-text1">Comming Soon!</div>
@@ -51,8 +54,9 @@ export default function Directions() {
         onClick={() => setOpen2(!open2)}
         aria-controls="example-collapse-text2"
         aria-expanded={open2}
+        className="d-flex"
       >
-        Via Sea
+        <span className="mr-auto"> From Ferry (Via Sea)</span>
         <FontAwesomeIcon icon={iconClass2} />
       </Button>
       <Collapse in={open2}>

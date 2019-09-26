@@ -15,7 +15,7 @@ export default function Location() {
         }}
       />
       <Container id="gettingHere" style={{ backgroundColor: "#FAFAFA" }}>
-        <div>here we are</div>
+        <br />
         <Row>
           <Col>
             <Map
@@ -37,7 +37,11 @@ export default function Location() {
             />
           </Col>
           <Col>
-            DIRECTIONS
+            ADDRESS :
+            <p>
+              7D Majestic House, 80 Nathan Road, Tsim Sha Tsui, Kowloon, Hong
+              Kong
+            </p>
             <hr />
             <Directions />
           </Col>

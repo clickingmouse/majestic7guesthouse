@@ -8,8 +8,13 @@ export default function FeaturedCard(props) {
         <Card.Img variant="top" src={props.pic} />{" "}
       </Link>
       <Card.Body>
-        <Card.Title style={{ color: "black" }}>{props.title}</Card.Title>
-        <Card.Text style={{ color: "black" }}>{props.summary}</Card.Text>
+        <Link to="/handy-apps" style={{ textDecoration: "none" }}>
+          <Card.Title style={{ color: "black" }}>{props.title}</Card.Title>
+        </Link>
+
+        <Link to="/handy-apps" style={{ textDecoration: "none" }}>
+          <Card.Text style={{ color: "black" }}>{props.summary}</Card.Text>
+        </Link>
       </Card.Body>
       <Card.Footer>
         <small className="text-muted">by Majestic7Guesthouse</small>

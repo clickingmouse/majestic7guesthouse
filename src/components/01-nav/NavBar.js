@@ -31,9 +31,14 @@ export default function NavBar() {
           </NavDropdown>
         </Nav>
         <Nav>
-          <Nav.Link href="#deets">Book</Nav.Link>
+          <Nav.Link
+            href="https://hotels.cloudbeds.com/reservation/IOlzSh"
+            target="_blank"
+          >
+            Book
+          </Nav.Link>
           <Nav.Link eventKey={2} href="#memes">
-            FAQ
+            <Link to="/faq">FAQ</Link>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
