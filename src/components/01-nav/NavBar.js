@@ -10,17 +10,32 @@ export default function NavBar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#features">
-            <Link smooth to="/#rooms">
+          <Nav.Link href="#rooms" style={{ textDecoration: "none" }}>
+            <Link
+              smooth
+              to="/#rooms"
+              style={{ textDecoration: "none", color: "#fafafa" }}
+            >
               Rooms
             </Link>
           </Nav.Link>
-          <Nav.Link href="#pricing">
-            <Link smooth to="/#gettingHere">
+          <Nav.Link href="#gettingHere">
+            <Link
+              smooth
+              to="/#gettingHere"
+              style={{ textDecoration: "none", color: "#fafafa" }}
+            >
               Getting Here
             </Link>
           </Nav.Link>
-          <NavDropdown title="Around Us" id="collasible-nav-dropdown">
+          <NavDropdown
+            title={
+              <span style={{ textDecoration: "none", color: "#fafafa" }}>
+                Around Us
+              </span>
+            }
+            id="collasible-nav-dropdown"
+          >
             <NavDropdown.Item href="#action/3.1">Breakfast</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Late Night</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">Supermarkets</NavDropdown.Item>
@@ -32,11 +47,17 @@ export default function NavBar() {
           <Nav.Link
             href="https://hotels.cloudbeds.com/reservation/IOlzSh"
             target="_blank"
+            style={{ textDecoration: "none", color: "#fafafa" }}
           >
             Book
           </Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
-            <Link to="/faq">FAQ</Link>
+          <Nav.Link eventKey={2} href="#faq">
+            <Link
+              to="/faq"
+              style={{ textDecoration: "none", color: "#fafafa" }}
+            >
+              FAQ
+            </Link>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

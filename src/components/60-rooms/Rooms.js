@@ -45,7 +45,10 @@ export default function Rooms() {
           >
             <br />
             <Container>
-              <Row>
+              <Row
+                style={{ alignContent: "space-between" }}
+                className="justify-content-between"
+              >
                 <Col sm={4}>
                   <RoomCard
                     image={budget}

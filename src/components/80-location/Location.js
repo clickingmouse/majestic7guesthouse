@@ -17,7 +17,7 @@ export default function Location() {
       <Container id="gettingHere" style={{ backgroundColor: "#FAFAFA" }}>
         <br />
         <Row>
-          <Col>
+          <Col sm={6}>
             <Map
               id="myMap"
               options={{
@@ -36,7 +36,7 @@ export default function Location() {
               }}
             />
           </Col>
-          <Col>
+          <Col sm={6}>
             ADDRESS :
             <p>
               7D Majestic House, 80 Nathan Road, Tsim Sha Tsui, Kowloon, Hong
