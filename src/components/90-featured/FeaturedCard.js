@@ -9,7 +9,12 @@ export default function FeaturedCard(props) {
       </Link>
       <Card.Body>
         <Link to="/handy-apps" style={{ textDecoration: "none" }}>
-          <Card.Title style={{ color: "black" }}>{props.title}</Card.Title>
+          <Card.Title
+            className="px-0"
+            style={{ color: "black", fontSize: "1vmin" }}
+          >
+            {props.title}
+          </Card.Title>
         </Link>
 
         <Link to="/handy-apps" style={{ textDecoration: "none" }}>

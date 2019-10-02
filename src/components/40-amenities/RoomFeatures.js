@@ -14,6 +14,7 @@ import { ReactComponent as BottledWater } from "../../media/amenities/bottledwat
 import { ReactComponent as Refrigerator } from "../../media/amenities/refrigerator.svg";
 import { ReactComponent as ElectricKettle } from "../../media/amenities/kettle.svg";
 import { Container, Row, Col } from "react-bootstrap";
+import "./roomsFeatures.css";
 export default function RoomFeatures() {
   return (
     <Container style={{ backgroundColor: "#FAFAFA" }}>
@@ -86,10 +87,10 @@ export default function RoomFeatures() {
             color="#1565c0"
           />
         </Col>
-        <Col xs={4} sm={2}>
+        <Col xs={4} sm={2} id="fridge">
           <FeatureCard
             icon={<Refrigerator width="80%" height="auto " fill="#e66256" />}
-            title="Refrigerator"
+            title="Communual Fridge"
             color="#1565c0"
           />
         </Col>
