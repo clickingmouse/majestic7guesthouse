@@ -36,11 +36,19 @@ export default function NavBar() {
             }
             id="collasible-nav-dropdown"
           >
-            <NavDropdown.Item href="#action/3.1">Breakfast</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Late Night</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Supermarkets</NavDropdown.Item>
+            <NavDropdown.Item href="#" disable>
+              Breakfast
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#" disable>
+              Late Night
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#" disable>
+              Supermarkets
+            </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Tidbits</NavDropdown.Item>
+            <NavDropdown.Item href="#" disable>
+              Tidbits
+            </NavDropdown.Item>
           </NavDropdown>
         </Nav>
         <Nav>
