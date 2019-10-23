@@ -8,7 +8,7 @@ export default function FeaturedCard(props) {
         <Card.Img variant="top" src={props.pic} />{" "}
       </Link>
       <Card.Body>
-        <Link to="/handy-apps" style={{ textDecoration: "none" }}>
+        <Link to={props.link} style={{ textDecoration: "none" }}>
           <Card.Title
             className="px-0"
             style={{ color: "black", fontSize: "1vmin" }}
@@ -17,7 +17,7 @@ export default function FeaturedCard(props) {
           </Card.Title>
         </Link>
 
-        <Link to="/handy-apps" style={{ textDecoration: "none" }}>
+        <Link to={props.link} style={{ textDecoration: "none" }}>
           <Card.Text style={{ color: "black" }}>{props.summary}</Card.Text>
         </Link>
       </Card.Body>

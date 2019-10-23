@@ -16,8 +16,9 @@ export default function Featured() {
           <FeaturedCard
             title="Handy Apps"
             summary="When in Rome, use as the romans. Although some apps are
-                globally recognizeds, some apps do have their niche locally."
+                globally recognized, some apps do have their niche locally."
             pic={apps}
+            link="/handy-apps"
           />
 
           <FeaturedCard
@@ -28,6 +29,7 @@ export default function Featured() {
             one bearings. Here are some options to help travellers off their
             feet"
             pic={grocery}
+            link="/supermarkets"
           />
 
           <FeaturedCard
@@ -36,6 +38,7 @@ export default function Featured() {
             doesn't wake up till 10:30 AM. It's not uncommon to see a coffee
             house not open at nine; Here are some morning options..."
             pic={breakfast}
+            link=""
           />
 
           <Card>
