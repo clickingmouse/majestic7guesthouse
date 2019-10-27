@@ -11,7 +11,9 @@ import Rooms from "../src/components/60-rooms/Rooms";
 import FerryParallax from "../src/components/70-parallax/FerryParallax";
 import Location from "../src/components/80-location/Location";
 import Featured from "../src/components/90-featured/Featured";
-import HandyApps from "../src/components/90-featured/HandyApps";
+import HandyApps from "../src/components/90-featured/apps/HandyApps";
+import SuggestedApps from "../src/components/90-featured/apps/SuggestedApps";
+
 import Groceries from "../src/components/90-featured/Groceries";
 import Faq from "../src/components/91-faq/Faq";
 import Footer from "../src/components/02-footer/Footer";
@@ -32,6 +34,7 @@ function App() {
       <Route exact path="/" component={Location} />
       <Route exact path="/" component={Featured} />
       <Route exact path="/handy-apps" component={HandyApps} />
+      <Route exact path="/suggested-apps" component={SuggestedApps} />
       <Route exact path="/supermarkets" component={Groceries} />
       <Route exact path="/faq" component={Faq} />
       <Route path="/" component={Footer} />

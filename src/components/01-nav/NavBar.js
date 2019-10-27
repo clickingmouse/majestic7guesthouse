@@ -1,7 +1,29 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { connect } from "react-redux";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { HashLink as Link } from "react-router-hash-link";
-export default function NavBar() {
+import LoginModal from "../../auth/LoginModal";
+import RegisterModal from "../../auth/RegisterModal";
+import Logout from "../../auth/Logout";
+import PropTypes from "prop-types";
+function NavBar(props) {
+  const { isAuthenticated, user } = props.auth;
+  const authLinks = (
+    <Fragment>
+      <span className="navbar-text mr-3">
+        <strong>{user ? `welcome ${user.name}` : null}</strong>
+      </span>
+      <Logout />
+    </Fragment>
+  );
+
+  const guestLinks = (
+    <Fragment>
+      <RegisterModal />
+      <LoginModal />
+    </Fragment>
+  );
+
   return (
     <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Link to="/">
@@ -67,8 +89,18 @@ export default function NavBar() {
               FAQ
             </Link>
           </Nav.Link>
+          {isAuthenticated ? authLinks : guestLinks}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
   );
 }
+
+Navbar.propTypes = {
+  auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+  auth: state.auth
+});
+export default connect(mapStateToProps)(NavBar);
