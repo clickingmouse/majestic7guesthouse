@@ -94,13 +94,12 @@ const RegisterModal = props => {
             <Modal.Title>Register</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Woohoo, you're reading this text in a modal!
             {state.msg ? <Alert variant="danger">{state.msg}</Alert> : null}
             <Form.Group controlId="formName">
               <Form.Label>Name</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter item to add"
+                placeholder="Enter your name"
                 onChange={handleChange}
                 className="mb-3"
                 name="name"
@@ -122,7 +121,7 @@ const RegisterModal = props => {
               <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
-                placeholder="Enter Email"
+                placeholder="password goes here"
                 className="mb-3"
                 onChange={handleChange}
                 name="password"

@@ -95,13 +95,12 @@ const LoginModal = props => {
             <Modal.Title>Login</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Woohoo, you're reading this text in a modal!
             {state.msg ? <Alert variant="danger">{state.msg}</Alert> : null}
             <Form.Group controlId="formEmail">
-              <Form.Label>Email</Form.Label>
+              <Form.Label>Login Email</Form.Label>
               <Form.Control
                 type="email"
-                placeholder="Enter Email"
+                placeholder="Enter e-mail used to signup"
                 className="mb-3"
                 onChange={handleChange}
                 name="email"
@@ -112,7 +111,7 @@ const LoginModal = props => {
               <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
-                placeholder="Enter Email"
+                placeholder="Enter Secret Password"
                 className="mb-3"
                 onChange={handleChange}
                 name="password"
